@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Задача №3</h2>
+	<h2>Найти общую стоимость и НДС (5% от общей стоимости)</h2>
+	<script>
+		//Найти общую стоимость и НДС (5% от общей стоимости).
+		let priceOfProduct = parseFloat(prompt('Цена продукта'),'0')
+		let numberOfProduct = parseInt(prompt('Количество товара','0'))
+		let totalPrice = priceOfProduct * numberOfProduct
+		let totalPvd = (totalPrice / 100) * 5
+		document.write(`НДС = ${totalPvd}`)
+	</script>
+</body>
+</html>

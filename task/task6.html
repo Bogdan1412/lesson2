@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<body>
+		<h2>Задача №6</h2>
+		<h2>С клавиатуры вводится стоимость товара и количество единиц 3 товаров. Вычислить стоимость каждого товара в отдельности и общую стоимость.</h2>
+	</body>
+	<script>
+	let firstPriceItem = parseFloat(prompt('Цена первого товара','0'))
+	let firstQuantityItem = parseInt(prompt('Количество первого товара','0'))
+	let secondPriceItem = parseFloat(prompt('Цена второго товара','0'))
+	let secondQuantityItem = parseInt(prompt('Количество второго товара'))
+	let thirdPriceItem = parseFloat(prompt('Цена третего товара','0'))
+	let thirdQuantityItem = parseInt(prompt('Количество третего товара'))
+
+	let totalfirstPriceItem = firstPriceItem * firstQuantityItem
+	let totalSecondPriceItem = secondPriceItem * secondQuantityItem
+	let totalThirdPriceItem = thirdPriceItem * thirdQuantityItem
+	
+	let totalPrice = totalfirstPriceItem + totalSecondPriceItem + totalThirdPriceItem
+
+	document.write(`
+	<table border="2px">
+		<tbody>
+			<tr>
+				<td>Цена товара</td>
+				<td>количество</td>
+				<td>цена</td>
+				<td>общая сумма</td>
+			</tr>
+			<tr>
+				<td>Цена первого товара ${totalfirstPriceItem}</td>
+				<td>Количество первого товара ${firstQuantityItem}</td>
+				<td>Сумма первого товара ${totalfirstPriceItem}</td>
+			</tr>
+			<tr>
+				<td>Цена второго товара ${secondPriceItem}</td>
+				<td>Количество второго товара ${secondQuantityItem}</td>
+				<td>Сумма второго товара ${totalSecondPriceItem}</td>
+			</tr>
+			<tr>
+				<td>Цена третего товара ${totalfirstPriceItem}</td>
+				<td>Количество третего товара ${thirdQuantityItem}</td>
+				<td>Сумма третего товара ${totalThirdPriceItem}</td>
+				<td>Сумма ${totalPrice}</td>
+			</tr>
+		</tbody>
+	</table>
+	`)
+</script>
+
+</html>

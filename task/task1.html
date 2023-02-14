@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Задача №1</h2>
+	<script>
+		//Найти сумму, произведение и долю двух действительных чисел
+		let a = parseFloat(prompt('Введите a =','0'))
+		let b = parseFloat(prompt('Введите b =','0'))
+		let sum1 = a + b
+		let sum2 = a - b
+		let sum3 = a / b
+		let sum4 = a * b
+		document.write(`
+		<h1>
+			<table border="2px">
+				<tr>
+					<td>Прибавление = ${sum1}</td>
+				</tr>
+				<tr>
+					<td>Вычитани = ${sum2}</td>
+				</tr>
+				<tr>
+					<td>Деление = ${sum3}</td>
+				</tr>
+				<tr>
+					<td>Умножение = ${sum4}</td>
+				</tr>
+			</table>
+		</h1>
+		`)
+		// document.write(`
+		// <table>
+		// 	<td>Summ = ${c1}</td>
+		// </table>
+		// `)
+	</script>
+	
+</body>
+</html>

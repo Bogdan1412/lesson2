@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Задача №7</h2>
+	<h2>Задание 7. Найти сумму случайного номера месяца (от 1 до 12) и случайного номера дня (от 0 до 6).</h2>
+	<script>
+		let randomMonth = Math.floor(Math.random(1)* 12) + 1
+		let randomDay = Math.floor(Math.random(1) * 7)
+		let randomDayMonth = randomMonth + randomDay
+		document.write(`номера месяца = ${randomMonth}`)
+		
+	</script>
+	<br>
+	<script>
+		document.write(`номера дня = ${randomDay}`)
+	</script>
+	<br>
+	<script>
+		document.write(`номера дня и месяца = ${randomDayMonth}`)
+	</script>
+</body>
+</html>

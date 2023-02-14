@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Задача №4</h2>
+	<h2>Дана длина в сантиметрах. Определять, сколько это метров и километров.</h2>
+	<script>
+		let lengthInCentimeter = parseFloat(prompt(' Сколько см'),'0')
+		let howMeter = lengthInCentimeter / 100
+		let howKilometers = lengthInCentimeter / 100000
+		document.write(`В ${lengthInCentimeter} сантиметров получаеться ${howMeter} метров и ${howKilometers} килломметров`)
+	</script>
+</body>
+</html>
